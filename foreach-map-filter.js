@@ -116,7 +116,11 @@ Examples:
 */
 
 function valTimesIndex(arr){
-    
+    let newArr = [];
+    arr.map(function(num, i) {
+        newArr.push(num * i);
+    })
+    return newArr;
 }
 
 /*
