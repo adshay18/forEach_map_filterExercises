@@ -39,7 +39,13 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let str = '';
+        str = arr[i];
+        newArr.push(str.charAt(0) + str.charAt([str.length - 1]));
+    }
+    return newArr;
 }
 
 /*
