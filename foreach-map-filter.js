@@ -131,7 +131,11 @@ Examples:
 */
 
 function extractKey(arr, key){
-    
+    const extracted = [];
+    arr.map(function(obj) {
+        extracted.push(obj[key]);
+    })
+    return extracted;
 }
 
 /*
@@ -142,7 +146,11 @@ Examples:
 */
 
 function extractFullName(arr){
-    
+    const fullName = [];
+    arr.map(function(obj) {
+        fullName.push(`${obj['first']} ${obj['last']}`)
+    })
+    return fullName;
 }
 
 /*
